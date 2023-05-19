@@ -1,0 +1,138 @@
+
+head{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition:2s;
+}
+body{
+    margin:0;
+    background-color:rgb(222, 222, 222);
+    color:rgb(0, 0, 0);
+    transition: 2s;
+    text-align: center;
+    overflow:hidden;
+}
+
+.dark-mode{
+    background-color:rgb(0, 0, 0);
+    color:rgb(222, 222, 222);
+}
+
+.light-mode{
+    background-color:rgb(222, 222, 222);
+    color:rgb(0, 0, 0);
+}
+
+.theme-icon{
+    background-color:rgb(0, 0, 0);
+    color:rgb(222, 222, 222);
+    transition:2s;
+}
+
+#mainHeader{
+    margin:0 auto;
+    overflow:hidden;
+    border-right: .15em solid gray;
+    white-space:nowrap;
+    animation:
+        typing 1s steps(20, end);
+}
+
+#mainResHeader{
+    margin:0px;
+}
+
+.h1:hover{
+    color:gray;
+}
+
+.navigation li{
+    display:inline;
+    text-align:center;
+}
+
+.navigation ul{
+    padding: 5px;
+    text-align:center;
+    color:inherit;
+    background-color:inherit;
+}
+
+.navigation a{
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+}
+
+
+.navigation a:hover{
+    color:gray;
+}
+
+.navigation #botbar{
+    position:fixed;
+    bottom:3px;
+    right: 60px;
+}
+
+.theme-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#darklight{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+#lightresume{
+    width:40%;
+    height:900px;
+    border:none;
+    position:absolute;  
+}
+
+#darkresume{
+    width:40%;
+    height:900px;
+    border:none;
+    margin:none;
+    padding:none;
+}
+
+#bio{
+    width:50%;
+    position:fixed;
+    left:25%;
+    font-size:large;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:12%}
+}
+
+.fadeOut{
+    -webkit-transition: 2s;
+    transition: 2s;
+    opacity: 0;
+}
+
+.fadeIn{
+    -webkit-transition: 2s;
+    transition:2s;
+    opacity:1;
+}
