@@ -1,6 +1,7 @@
-
+*{
+    font-family:'Inconsolata', monospace;
+}
 head{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition:2s;
 }
 body{
@@ -31,11 +32,12 @@ body{
 #mainHeader{
     margin:0 auto;
     overflow:hidden;
-    border-right: .15em solid gray;
+    border-right: .1em solid black;
     white-space:nowrap;
     animation:
-        typing 1s steps(20, end);
+        typing 0.5s steps(40);
 }
+
 
 #mainResHeader{
     margin:0px;
@@ -99,18 +101,15 @@ body{
 }
 
 #lightresume{
-    width:40%;
-    height:900px;
-    border:none;
-    position:absolute;  
+    width:auto;
+    height:auto;
+    position:absolute;
 }
 
 #darkresume{
-    width:40%;
-    height:900px;
-    border:none;
-    margin:none;
-    padding:none;
+    width:auto;
+    height:auto;
+
 }
 
 #bio{
@@ -132,7 +131,7 @@ body{
 }
 
 .fadeIn{
-    -webkit-transition: 2s;
-    transition:2s;
+    -webkit-transition: 0s;
+    transition:0s;
     opacity:1;
 }
